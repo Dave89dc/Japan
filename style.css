@@ -82,6 +82,7 @@ header h1 {
 .left {
     padding: 20px;
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     flex-basis: 0;
     justify-content: space-between;
@@ -97,12 +98,13 @@ header h1 {
 .center {
     border-left: 2px solid black;
     border-right: 2px solid black;
-    flex-grow: 4;
+    flex-grow: 12;
     flex-basis: 0;
 }
 
 .right {
     display: flex;
+    width: 280px;
     flex-direction: column;
     align-items: center;
     padding: 30px;
@@ -145,7 +147,7 @@ h2 {
     text-shadow: 4px 4px 6px black;
 }
 
-.nazione {
+.content {
     padding: 20px;
 }
 
@@ -169,7 +171,7 @@ h2 {
     box-shadow: none;
 }
 
-.nazione h1 {
+.content h1 {
     color: #FB6376;
     font-family: Merriweather Sans, sans-serif;
 }
@@ -199,5 +201,91 @@ p {
 }
 
 .foresta-bambu:hover {
+    box-shadow: none;
+}
+
+.arte-grid {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 30px auto 80px;
+    border: 1px solid black;
+}
+
+.arte-grid div{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.titolo-grid, .paragrafo-grid {
+    border: 1px solid black;
+}
+
+.titolo-grid h2 {
+    color: white;
+    margin: 0;
+}
+
+.paragrafo-grid p {
+    margin: 0;
+}
+
+.arte-grid div > .titolo-grid {
+    background-color: #5D2A42;
+    width: 200px;
+    text-align: center;
+    padding: 30px;
+    display: grid;
+    align-items: center;
+}
+
+.arte-grid div > .paragrafo-grid {
+    background-color: #FFDCCC;
+    text-align: center;
+    padding: 30px;
+    display: grid;
+    align-items: center;
+}
+
+.shodo {
+    width: 300px;
+    float: right;
+    box-shadow: 0 0 2px 2px black;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.shodo:hover {
+    box-shadow: none;
+}
+
+.arte {
+    clear: both;
+}
+
+.Kimono {
+    width: 300px;
+    float: left;
+    box-shadow: 0 0 2px 2px black;
+    margin-right: 20px;
+    margin-bottom: 80px;
+}
+
+.Kimono:hover {
+    box-shadow: none;
+}
+
+.musica {
+    clear: both;
+}
+
+.Shamisen {
+    width: 200px;
+    float: right;
+    box-shadow: 0 0 2px 2px black;
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+
+.Shamisen:hover {
     box-shadow: none;
 }
